@@ -7,7 +7,7 @@ class ToyModel(torch.nn.Module):
         super(ToyModel, self).__init__()
         # Start: 1*28*28
         self.cnn = torch.nn.Sequential(
-            torch.nn.Conv2d(1, 16, kernel_size=7, stride=1),#, padding=1),
+            torch.nn.Conv2d(3, 16, kernel_size=7, stride=1),#, padding=1),
             torch.nn.ReLU(),
             torch.nn.Dropout(0.3),
             torch.nn.BatchNorm2d(16),

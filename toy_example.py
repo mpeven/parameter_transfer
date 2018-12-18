@@ -52,7 +52,7 @@ def stage_1():
 
 
     phase_dataloaders = [
-        ("train", torch.utils.data.DataLoader(Nines("mnist", "train"), batch_size=256, num_workers=8)),
+        ("train", torch.utils.data.DataLoader(Nines("mnist", "train"), batch_size=256, num_workers=1)),
         ("test", torch.utils.data.DataLoader(Nines("mnist", "test"), batch_size=256, num_workers=8))
     ]
     num_epochs = 200
